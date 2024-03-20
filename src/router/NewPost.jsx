@@ -11,8 +11,16 @@ const NewPost = () => {
   const [body, setBody] = useState( )
   const navigate = useNavigate()
 
-const createPost = (e) => {
+const createPost = async (e) => {
   e.preventDefault()
+
+  const post = { title, body, userd: 1}
+
+  await blogFetch.post('/posts', {
+    body: post,
+  })
+
+  navigate('/')
 }
 
   return (
@@ -23,12 +31,12 @@ const createPost = (e) => {
        
         <div className={style.form_control}>
           <label htmlFor="title" >Title</label>
-          <input type="text" placeholder='Digite o título' id="title" name='title'/>
+          <input type="text" placeholder='Digite o título' id="title" name='title' onChange={e => setTitle(e.target.value)} />
         </div>
 
         <div className={style.form_control}>
           <label htmlFor="body" >Conteúdo</label>
-          <textarea name="body" id="body" placeholder="Digite o conteúdo" ></textarea>
+          <textarea name="body" id="body" placeholder="Digite o conteúdo" onChange={e =>setBody(e.target.value)} ></textarea>
         </div>
         <input type="submit" value="Criar" className={style.newBtn} />
 
