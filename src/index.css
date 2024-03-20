@@ -1,0 +1,30 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: clamp(40%, 1% + 2vw, 62.5%);
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Poppins;
+  background: linear-gradient(90deg, #1116a6 50%, #000d99 100%)
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  opacity: .7;
+  transition: 0.3s ease;
+}
+
+a:hover {
+  opacity: 1;
+}

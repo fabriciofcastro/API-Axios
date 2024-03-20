@@ -1,0 +1,54 @@
+.home h1 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #ff0000;
+}
+
+.post {
+  display: flex;
+  flex-flow: column;
+  row-gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: .1rem solid #fff9;
+}
+
+.post h2 {
+  color: #ff6a00;
+}
+
+.post h4 {
+  color: #eeff00;
+  text-indent: 1rem;
+} 
+
+.post h2,
+.post h4 {
+  margin-bottom: 1rem;
+}
+
+.post h2::first-letter {
+  text-transform: uppercase;
+  color: #eeff00;
+}
+
+.btn_posts {
+  background-color: #fff;
+  font-weight: 600;
+  color: #0000ff;
+  border: 0.1rm solid #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  max-width: 10rem;
+  text-align: center;
+  cursor: pointer;
+  border: .1rem solid transparent;
+  transition: 0.3s ease;
+}
+
+.btn_posts:hover {
+  color: #fff;
+  background-color: transparent;
+  border: 0.1rem solid #ffffff;
+}
