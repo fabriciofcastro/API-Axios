@@ -1,6 +1,7 @@
-.new_posts h2 {
+.new_pots h2 {
   text-align: center;
   margin-bottom: 1rem;
+  color: #e64906;
 }
 
 form {
@@ -15,13 +16,39 @@ form {
   margin-bottom: 1rem;
 }
 
-.form-control label {
+.form_control label {
   margin-bottom: 0.5rem;
+  color: #e64906;
+    font-weight: 600;
 }
 
-.form-control input,
-.form-control textarea {
-  padding: 0.5rem;
+.form_control input {
+  padding: 0.5rem 0.5rem;
   border-radius: 0.5rem;
+  height: 4rem;
+  }
+  
+  .form_control input:focus {
+    border: 0.1rem solid #e64906;
+  }
+  
+  .form_control textarea {
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+    height: 10rem;
   border: none;
+}
+.newBtn {
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  border: 0.1rem solid transparent;
+  font-weight: 600;
+  transition: ease 0.3s;
+}
+
+.newBtn:hover {
+  background-color: transparent;
+  border: 0.1rem solid #fff;
+  color: #fff;
 }
